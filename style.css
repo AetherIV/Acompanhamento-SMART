@@ -1,0 +1,74 @@
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    border: 2px solid hsla(0, 0%, 0%, 0.603);
+    box-shadow: 2px 2px 3px gray;
+}
+
+body {
+    padding-top: 56px;
+}
+
+#sobre, #inicio, #contato, #planos{
+    animation: slideIn 1s ease-out;
+}
+
+#dataForm {
+    margin-top: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+}
+
+.animate {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.animate.slide-in {
+    animation: slideIn 1s ease-out forwards;
+}
+
+.animate.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(360%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #f7f7f7;
+}
+
+.modal-body {
+    padding: 20px;
+}
